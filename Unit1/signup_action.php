@@ -47,7 +47,7 @@
             else {
                 
                 //Insert statement
-                $sql = "INSERT INTO users (username, password) VALUES (?, ?)";
+                $sql = "INSERT INTO users (username, hashpass) VALUES (?, ?)";
                 
                 //Bind variables to prepared statement
                 if($stmt = mysqli_prepare($conn, $sql)){
