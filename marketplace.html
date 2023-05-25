@@ -4,34 +4,522 @@
     <head>
         <title>"Marketplace"</title>
 
-        <!--Links at the top of the page-->
-        <div class="links">
-            <a href="Samples\edittedSample1.html">A Better Sample</a> <a href="index.html">Home</a> <a href="account.php">My Account</a> <a href="login.html">Sign In</a> <a href="signup.html">Sign Up</a>
-            </div>
+        <link rel="stylesheet" href="css/stylesheet.css">
+        
+       
     </head>
 
-    <body>
-        <div class="marketPlace">      
-        <p>The ODR Marketplace would look as follows</p>
-            <table border=1>
-            <tr>
-                <th>Equipment Type</th>
-                <th>Description</th>
-                <th>Thumnail</th>
-                <th>Price</th>
-            </tr>
-            <tr>
-                <td>Hockey Stick</td>
-                <td>Sherwood 5000. Solid wood, pre-tapped moderately used</td>
-                <td><img src="Images\resizedHockeyStick.jpg" alt="Sherwood 5000 Hockey stick" style="width:250px; height:444px;">
-                <td>$25</td>
-            </table>
-        </div>
-
-
-        
-	<div class="footerLinks">
-		<a href="TaC.html">Terms and Conditions</a> <a href="news.html">Newsletter</a> <a href="feedback.html">Feedback</a>
+    <header>
+		
+		<!--Navbar at the top of the page-->
+	<div class="nav">
+		<ul class="nav_links">
+			<li class="list">
+				<a href="index.html">
+				<span class=icon>
+					<img width="100px" src="Images\logo.jpg">
+				</span>
+				<span class=text>Home</span>
+				</a>
+			</li>
+			<li class="list">
+				<a href="marketplace.html">
+				<span class=icon>
+					<img width="30px" src="Images\marketplace_icon.svg">
+				</span>
+				<span class=text>Marketplace</span>
+				</a>
+			</li>
+			<li class="list">
+				<a href="account.php">
+					<span class=icon>
+						<img width="30px" src="Images\hockey_player_icon.svg">
+					</span>
+				<span class=text>My Account</span>
+				</a>
+			</li>
+			<li class="list">
+				
+					<a href="#popup2">
+						<span class=icon>
+							<img width="30px" src="Images\hockey_puck_icon.svg">
+						</span>
+					
+					<span class=text>Sign In</span>
+					</a>
+				
+			</li>
+			<li class="list">
+				<a href="#popup1">
+					<span class=icon>
+						<img width="30px" src="Images\register.svg">
+					</span>
+				<span class=text>Sign Up</span>
+				</a>
+			</li>
+			<li class="list">
+				<a href="Samples/edittedSample1.html">
+					<span class=icon>
+						<img width="28px" src="Images\page_icon.svg">
+					</span>
+				<span class=text>A Better Sample</span>
+				</a>
+			</li>
+			
+		</ul>
 	</div>
+	</header>
+
+    <body id="marketplace">
+        <!--Main Market Page-Table with items-->
+		<main class="table">
+			<section class="table_header">
+				<h1>ODR+ Marketplace</h1>
+			</section>
+			<section class="table_body" contenteditable="true">
+			     <table>
+					<thead>
+						<tr>
+							
+							<th>Equipment Type</th>
+							<th>Description</th>
+							<th>Thumnail</th>
+							<th>Price</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>Hockey Stick</td>
+							<td>Sherwood 5000. Solid wood, pre-tapped moderately used</td>
+							<td><img src="Images\resizedHockeyStick.jpg" alt="Sherwood 5000 Hockey stick" ">
+							<td>$25</td>
+					</tr>
+					<tr>
+						<td>Hockey gloves</td>
+						<td>CCM-Brand New</td>
+						<td>No Image Provided</td>
+						<td>$40</td>
+					</tr>
+					<tr>
+						<td>Hockey Skates</td>
+						<td>Bauer, Just sharpened but used</td>
+						<td>No Image Provided</td>
+						<td>$70</td>
+					</tr>
+					<tr>
+						<td>Example</td>
+						<td>Example Description</td>
+						<td>No Image Provided</td>
+						<td>$XX</td>
+					</tr>
+					<tr>
+						<td>Example</td>
+						<td>Example Description</td>
+						<td>No Image Provided</td>
+						<td>$XX</td>
+					</tr>
+					<tr>
+						<td>Example</td>
+						<td>Example Description</td>
+						<td>No Image Provided</td>
+						<td>$XX</td>
+					</tr>
+					<tr>
+						<td>Example</td>
+						<td>Example Description</td>
+						<td>No Image Provided</td>
+						<td>$XX</td>
+					</tr>
+					<tr>
+						<td>Example</td>
+						<td>Example Description</td>
+						<td>No Image Provided</td>
+						<td>$XX</td>
+					</tr>
+					<tr>
+						<td>Example</td>
+						<td>Example Description</td>
+						<td>No Image Provided</td>
+						<td>$XX</td>
+					</tr>
+					<tr>
+						<td>Example</td>
+						<td>Example Description</td>
+						<td>No Image Provided</td>
+						<td>$XX</td>
+					</tr>
+					<tr>
+						<td>Example</td>
+						<td>Example Description</td>
+						<td>No Image Provided</td>
+						<td>$XX</td>
+					</tr>
+					<tr>
+						<td>Example</td>
+						<td>Example Description</td>
+						<td>No Image Provided</td>
+						<td>$XX</td>
+					</tr>
+					<tr>
+						<td>Example</td>
+						<td>Example Description</td>
+						<td>No Image Provided</td>
+						<td>$XX</td>
+					</tr>
+					<tr>
+						<td>Example</td>
+						<td>Example Description</td>
+						<td>No Image Provided</td>
+						<td>$XX</td>
+					</tr>
+					<tr>
+						<td>Example</td>
+						<td>Example Description</td>
+						<td>No Image Provided</td>
+						<td>$XX</td>
+					</tr>
+					<tr>
+						<td>Example</td>
+						<td>Example Description</td>
+						<td>No Image Provided</td>
+						<td>$XX</td>
+					</tr>
+					<tr>
+						<td>Example</td>
+						<td>Example Description</td>
+						<td>No Image Provided</td>
+						<td>$XX</td>
+					</tr>
+					<tr>
+						<td>Example</td>
+						<td>Example Description</td>
+						<td>No Image Provided</td>
+						<td>$XX</td>
+					</tr>
+					<tr>
+						<td>Example</td>
+						<td>Example Description</td>
+						<td>No Image Provided</td>
+						<td>$XX</td>
+					</tr>
+					<tr>
+						<td>Example</td>
+						<td>Example Description</td>
+						<td>No Image Provided</td>
+						<td>$XX</td>
+					</tr>
+					<tr>
+						<td>Example</td>
+						<td>Example Description</td>
+						<td>No Image Provided</td>
+						<td>$XX</td>
+					</tr>
+					<tr>
+						<td>Example</td>
+						<td>Example Description</td>
+						<td>No Image Provided</td>
+						<td>$XX</td>
+					</tr>
+					<tr>
+						<td>Example</td>
+						<td>Example Description</td>
+						<td>No Image Provided</td>
+						<td>$XX</td>
+					</tr>
+					<tr>
+						<td>Example</td>
+						<td>Example Description</td>
+						<td>No Image Provided</td>
+						<td>$XX</td>
+					</tr>
+					<tr>
+						<td>Example</td>
+						<td>Example Description</td>
+						<td>No Image Provided</td>
+						<td>$XX</td>
+					</tr>
+					<tr>
+						<td>Example</td>
+						<td>Example Description</td>
+						<td>No Image Provided</td>
+						<td>$XX</td>
+					</tr>
+					<tr>
+						<td>Example</td>
+						<td>Example Description</td>
+						<td>No Image Provided</td>
+						<td>$XX</td>
+					</tr>
+					<tr>
+						<td>Example</td>
+						<td>Example Description</td>
+						<td>No Image Provided</td>
+						<td>$XX</td>
+					</tr>
+					<tr>
+						<td>Example</td>
+						<td>Example Description</td>
+						<td>No Image Provided</td>
+						<td>$XX</td>
+					</tr>
+					<tr>
+						<td>Example</td>
+						<td>Example Description</td>
+						<td>No Image Provided</td>
+						<td>$XX</td>
+					</tr>
+					<tr>
+						<td>Example</td>
+						<td>Example Description</td>
+						<td>No Image Provided</td>
+						<td>$XX</td>
+					</tr>
+					<tr>
+						<td>Example</td>
+						<td>Example Description</td>
+						<td>No Image Provided</td>
+						<td>$XX</td>
+					</tr>
+					<tr>
+						<td>Example</td>
+						<td>Example Description</td>
+						<td>No Image Provided</td>
+						<td>$XX</td>
+					</tr>
+					<tr>
+						<td>Example</td>
+						<td>Example Description</td>
+						<td>No Image Provided</td>
+						<td>$XX</td>
+					</tr>
+					<tr>
+						<td>Example</td>
+						<td>Example Description</td>
+						<td>No Image Provided</td>
+						<td>$XX</td>
+					</tr>
+					<tr>
+						<td>Example</td>
+						<td>Example Description</td>
+						<td>No Image Provided</td>
+						<td>$XX</td>
+					</tr>
+					<tr>
+						<td>Example</td>
+						<td>Example Description</td>
+						<td>No Image Provided</td>
+						<td>$XX</td>
+					</tr>
+					<tr>
+						<td>Example</td>
+						<td>Example Description</td>
+						<td>No Image Provided</td>
+						<td>$XX</td>
+					</tr>
+					<tr>
+						<td>Example</td>
+						<td>Example Description</td>
+						<td>No Image Provided</td>
+						<td>$XX</td>
+					</tr><tr>
+						<td>Example</td>
+						<td>Example Description</td>
+						<td>No Image Provided</td>
+						<td>$XX</td>
+					</tr>
+					<tr>
+						<td>Example</td>
+						<td>Example Description</td>
+						<td>No Image Provided</td>
+						<td>$XX</td>
+					</tr>
+					<tr>
+						<td>Example</td>
+						<td>Example Description</td>
+						<td>No Image Provided</td>
+						<td>$XX</td>
+					</tr>
+					<tr>
+						<td>Example</td>
+						<td>Example Description</td>
+						<td>No Image Provided</td>
+						<td>$XX</td>
+					</tr>
+					<tr>
+						<td>Example</td>
+						<td>Example Description</td>
+						<td>No Image Provided</td>
+						<td>$XX</td>
+					</tr>
+					<tr>
+						<td>Example</td>
+						<td>Example Description</td>
+						<td>No Image Provided</td>
+						<td>$XX</td>
+					</tr>
+					<tr>
+						<td>Example</td>
+						<td>Example Description</td>
+						<td>No Image Provided</td>
+						<td>$XX</td>
+					</tr>
+					<tr>
+						<td>Example</td>
+						<td>Example Description</td>
+						<td>No Image Provided</td>
+						<td>$XX</td>
+					</tr>
+					<tr>
+						<td>Example</td>
+						<td>Example Description</td>
+						<td>No Image Provided</td>
+						<td>$XX</td>
+					</tr>
+					<tr>
+						<td>Example</td>
+						<td>Example Description</td>
+						<td>No Image Provided</td>
+						<td>$XX</td>
+					</tr>
+					<tr>
+						<td>Example</td>
+						<td>Example Description</td>
+						<td>No Image Provided</td>
+						<td>$XX</td>
+					</tr>
+					<tr>
+						<td>Example</td>
+						<td>Example Description</td>
+						<td>No Image Provided</td>
+						<td>$XX</td>
+					</tr>
+					<tr>
+						<td>Example</td>
+						<td>Example Description</td>
+						<td>No Image Provided</td>
+						<td>$XX</td>
+					</tr>
+					<tr>
+						<td>Example</td>
+						<td>Example Description</td>
+						<td>No Image Provided</td>
+						<td>$XX</td>
+					</tr>
+					<tr>
+						<td>Example</td>
+						<td>Example Description</td>
+						<td>No Image Provided</td>
+						<td>$XX</td>
+					</tr>
+					<tr>
+						<td>Example</td>
+						<td>Example Description</td>
+						<td>No Image Provided</td>
+						<td>$XX</td>
+					</tr>
+					<tr>
+						<td>Example</td>
+						<td>Example Description</td>
+						<td>No Image Provided</td>
+						<td>$XX</td>
+					</tr>
+					<tr>
+						<td>Example</td>
+						<td>Example Description</td>
+						<td>No Image Provided</td>
+						<td>$XX</td>
+					</tr>
+					</tbody>
+				 </table>
+				
+			</section>
+		</div>
+        <!--Footer Links-->
+<footer>
+	<hr class="footerHR">
+		<ul class="footerLinks">
+			<li>
+				<a href="TaC.html">
+					<span class="text">Terms and Conditions</span>
+				</a>
+			</li>
+			<li>
+				<h3>Newsletter</h3>
+				<form>
+					<input type="email" class="newsletter" placeholder="Join our newsletter" required><br>
+					<button type="submit">Join</button>
+				</form>
+			</li>
+				<li>
+					<a href="feedback.html">
+						<span class="text">Feedback</span>
+					</a>
+				</li>
+		</ul>
+	
+</footer>
+
+<!--Sign up Modal-->
+<div class="overlay" id="popup1">
+    <div class="popup">
+        <a class="close" href="#">&times;</a>
+
+        <div class="content">
+            
+            <form action="signup_action.php" method="post">
+                <div class="imgcontainer">
+                    <img src="Images\resizedHockeySil.jpg" alt="Silhouette of a hockey player" width="150" />
+                </div>
+
+                <h1>Sign up</h1>
+                <p>Please fill out your details below</p>
+                <br>
+                <div class="inputs">
+                    <input type="text" class="user_inputs" placeholder="Username" name="username" required><br>
+
+                    <input type="email" class="user_inputs" placeholder="Email" name="email" required><br>
+
+                    <input type="password" class="user_inputs" placeholder="Password" name="pass"        required><br>
+
+                    <input type="password" class="user_inputs" placeholder="Confirm Password" name="passConfirm" required><br>
+                </div>
+                <button type="submit" class="modal_button" name="signup">Sign Up</button>
+            </form>
+        </div>
+    </div>
+</div>
+
+<!--Sign in Modal-->
+<div class="overlay" id="popup2">
+    <div class="popup">
+        <a class="close" href="#">&times;</a>
+
+        <div class="content">
+            
+            <form action="login_action.php" method="post">
+                <div class="imgcontainer">
+                    <img src="Images\resizedHockeySil.jpg" alt="Silhouette of a hockey player" width="150" />
+                </div>
+
+                <h1>Sign In</h1>
+                <p>Please fill out your details below</p>
+                <br>
+                
+                    <input type="text" class="user_inputs" placeholder="Username" name="username" required><br>
+
+                    <input type="password" class="user_inputs" placeholder="Password" name="pass"        required><br>
+                
+                <button type="submit" class="modal_button" name="signIn">Sign In</button>
+                <br>
+                <div class="forgot">
+                    <a href="forgotPassword.html"><button>Forgot Password</button></a>
+                </div>
+            </form>
+            
+        </div>
+    </div>
+</div>
+</div>
+
     </body>
 </html>

@@ -1,0 +1,533 @@
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300&display=swap");
+
+@font-face {
+    font-family: sourcePro;
+    src: url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300&display=swap');
+}
+
+* {
+    margin: 0;
+    padding: 0;;
+}
+
+html, body {
+    height: 100%;
+    
+}
+body {
+    background-image: url('../Images/background_ice.jpg');
+    background-size: cover;
+
+}
+header .nav{
+    height: 10%;
+}
+.homeDiv {
+    min-height: 100%;
+}
+
+.homeMain {
+    overflow: auto;
+    padding-bottom: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.uses {
+    position: absolute;
+    top: 350px;
+    right: 100px; 
+    
+}
+.uses h3 {
+    margin-bottom: 25px;
+}
+
+.uses ul li{
+    display: flex;
+    justify-content: space-around;
+    align-items:center;
+    
+}
+.location-search {
+    position: relative;
+    top: 25px;
+    right: -150px;
+}
+
+.location-search input {
+    left: 110px;
+}
+
+footer {
+    height: 100px;
+    background-color: lightblue;
+    position: relative;
+    bottom: 0;
+    clear: both;
+}
+
+.footerHR {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    height: 5px;
+    background-color: black;
+    border-radius: 50%;
+    bottom: 5px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.footerLinks {
+    display: flex;
+    position: absolute;
+    justify-content: space-between;
+    align-content: center;
+    bottom: 0px;
+    width: 100%;
+}
+
+.footerLinks li {
+    display: inline-block;
+    padding: 0px 50px;
+    transition: all 0.3s ease-in-out;
+
+}
+
+.footerLinks a {
+    border-bottom: 5px solid white;
+    border-bottom-left-radius: 15px;;
+}
+
+.footerLinks li:hover a {
+    border-bottom: 5px solid black;
+    border-top: 5px solid black;
+    border-top-left-radius: 15px;
+    
+}
+
+.footerLinks h3{
+    display: flex;
+    justify-content: center;
+    border-bottom: 5px solid white;
+    border-bottom-left-radius: 15px;;
+}
+
+.footerLinks li:hover h3 {
+    border-bottom: 5px solid black;
+    border-top: 5px solid black;
+    border-top-left-radius: 15px;
+    
+}
+.footerLinks li form button {
+    position: relative;
+    left: 5px
+}
+
+.footerLinks li a .text {
+    transition: 0.5s;
+}
+
+.account {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    height: 90%;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    row-gap: 25px;
+    column-gap: 10px;
+    grid-template-rows: 1fr 2fr 1fr;
+    grid-template-columns:1fr 1fr;
+    grid-template-areas: 
+    'header header'
+    'body body'
+    'footer footer';
+}
+
+.account_container h2 {
+   position: absolute;
+    top: 15%;
+    left: 40%;
+    padding: 10px 0;
+   
+}
+.account_container {
+    display: grid;
+    grid-area: body;
+    grid-template-rows: 2fr 1fr 2fr 1fr;
+    grid-template-columns:1fr 1fr;
+    grid-template-areas: 
+    'info skill'
+    'rinks connections'
+    'market  market'
+    'footer footer';
+    
+}
+
+.account_Info {
+    grid-area: info;
+  
+}
+
+.account_skills{
+    grid-area: skill;
+}
+
+.account_rinks {
+    grid-area: rinks;
+}
+
+
+.account_connections {
+    grid-area: connections;
+}
+
+.account_listings {
+    grid-area: market;
+    justify-self: stretch;
+}
+
+.account_footer {
+   grid-area: footer;
+}
+
+header {
+    grid-area: header;
+}
+
+.nav_links {
+    list-style: none;
+}
+
+.nav_links li {
+    display: inline-block;
+    padding: 0px 40px
+}
+
+.nav_links li a {
+    display: flex;
+    flex-direction: column;
+    transition: all 0.3s ease-in-out;
+}
+
+.nav_links li a:hover {
+    color:blue;  
+}
+
+.nav_links li a .icon {
+    margin-left: 10px;
+    transition: all 0.3s ease-in-out;
+}
+
+.nav_links li:hover a .icon {
+    border-top: 5px solid black;
+    border-top-right-radius: 25px;
+    transform: translateY(-30px);
+}
+
+.nav_links li a .text {
+    transition: 0.5s;
+    opacity: 0;
+    transform: translateY(25px);
+}
+.nav_links li:hover a .text {
+    opacity: 1;
+    transform: translateY(-10px);
+}
+
+.nav_links li:hover a {
+    border-bottom: 5px solid black;
+    border-bottom-left-radius: 15px;
+}
+
+.nav_links a {
+    border-bottom: 5px solid white;
+    border-bottom-left-radius: 25px;
+}
+li, a, button {
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 500px;
+    color: black;
+    cursor: pointer;      
+}
+#marketplace {
+    min-height: auto;
+    min-width: 100%;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+main.table {
+    width: 100%;
+    height: 100%;
+    padding: 5px;
+    background-color: rgba(173, 216, 230, 0.2);
+    backdrop-filter: blur(2px);
+    box-shadow: 0 2px 2px black;
+    border-radius: 15px;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+table {
+   
+    width: 100%;
+    margin-bottom: 35px;
+}
+
+.table_header {
+    width: 100%;
+    height: 10%;
+    background-color: #fff4;
+    margin-top: 10px;
+    
+}
+
+.table_body {
+    display: grid;
+    width: 100%;
+    max-height: 90%;
+    margin: 25px auto;
+    overflow: auto;
+}
+
+td img {
+    width: 100px;
+    height: 100px;
+    border-radius: 25px;
+    display: flex;
+    justify-content: center;
+    vertical-align: middle;
+    
+}
+
+table, th, td {
+    padding: 5px;
+    background-color: rgba(173, 216, 230, 0.2);
+    backdrop-filter: blur(2px);
+    box-shadow: 0 2px 2px black;
+    border-radius: 10px; 
+}
+
+.table_body::-webkit-scrollbar{
+    width: 10px;
+    height: 10px;
+}
+
+.table_body::-webkit-scrollbar-thumb {
+    border-radius: 5px;
+    background-color: #0004;
+    visibility: hidden;
+}
+
+.table_body:hover::-webkit-scrollbar-thumb {
+    visibility: visible;
+
+}
+
+.formDiv {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top:10% 
+}
+
+.formDivH2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.formDiv form button {
+    position: relative;
+    top: 10px;
+    left: 50px;
+}
+
+input.location-search{
+    height: 50px;
+    position: relative;
+    top: 75px;
+  
+}
+
+hr {
+    height: 5px;
+    margin-left: 25px;
+    margin-right: 25px;
+    background: black;
+    border-radius: 5px;
+    border: none;
+    position: relative;
+    bottom: -265px;
+}
+
+
+form input {
+    height: 30px;
+    width: 200px;
+    border-radius: 10px;
+    margin: 5px;
+}
+
+form input::placeholder {
+    text-align: center;
+}
+
+form textarea::placeholder {
+    text-align: center;
+}
+
+form button {
+    width: 200px;
+    border-radius:10px;
+    background-image: linear-gradient(to bottom right, lightblue, blue);
+    color: white;
+    transition: 0.3s;
+}
+
+form button:hover {
+    background-image: linear-gradient(to bottom right, blue, lightblue);
+}
+
+h1 {
+    text-align: center;
+    
+}
+
+.open {
+    font-size: 25px;
+    padding: 10px;
+    color: white;
+    border: 1px solid white;
+    border-radius: 25px;
+    text-decoration: none;
+    cursor: pointer;
+    transition: all 0.5s ease-in-out;
+    background-image: linear-gradient(to bottom right, lightblue, blue);
+}
+
+.open:hover {
+    background-image: linear-gradient(to top right, lightblue, blue);
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.5);
+    transition: opacity 500ms;
+    visibility: hidden;
+    opacity: 0;
+}
+
+.overlay:target{
+    visibility: visible;
+    opacity: 1;
+
+}
+
+.popup {
+    margin: 75px auto;
+    padding: 25px;
+    background-image: url("../Images/second_ice_bg.jpg");
+    border-radius: 25px;
+    width: 30%;
+    position: relative;
+    top: 100px;
+    transition: all 2s ease-in-out
+}
+
+.popup .close {
+   position: absolute;
+   left: 5; 
+   transition: 200ms;
+   font-size: 40px;
+   font-weight: bold;
+   color: black;
+   text-decoration: none;
+
+}
+
+.popup .close:hover {
+    color: blue;
+    font-size: 45px;
+}
+
+.popup .content {
+    max-height: 50%;
+    overflow: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    
+
+}
+.popup .content form .forgot {
+    margin-top: 10px;
+    
+    
+}
+
+.imgcontainer {
+    position: relative;
+    left: 12px;
+}
+
+input.user_inputs {
+    width: 100%;
+    padding: 15px 20px;
+    margin: 5px 0;
+    border: none;
+    border-bottom: 2px solid blue;
+    box-sizing: border-box;
+    border-radius: 25px;
+   
+}
+
+input.user_inputs::placeholder {
+    text-align: center;
+}
+
+.modal_button {
+    width: 100%;
+    height: 50px;
+    border-radius: 25px;
+    border: 2px solid blue;
+    color: white;
+    background: linear-gradient(to bottom left, lightblue, blue);
+    transition: .5s ease-in-out;
+    font-size: 20px;
+    font-weight: bold;
+
+
+}
+
+.modal_button:hover {
+    background: linear-gradient(to bottom right, lightblue, blue);
+    font-size: 22px;
+    font-weight: bolder;
+    color: black;
+}   
+
+
+@media screen and (max-width: 700px) {
+ 
+    .popup {
+        width: 70%;
+        
+    }
+
+
+}
+
