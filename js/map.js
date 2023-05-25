@@ -20,7 +20,7 @@ let infoWindow;
          position: rink_1, 
          map: map, 
          icon: {
-            url: "http://maps.google.com/mapfiles/ms/icons/red-dot.png",
+            url: "https://maps.google.com/mapfiles/ms/icons/red-dot.png",
             labelOrigin: new google.maps.Point(85, 32),
             size: new google.maps.Size(32, 32),
             anchor: new google.maps.Point(16, 32)},
