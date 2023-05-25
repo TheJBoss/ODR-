@@ -99,12 +99,16 @@
 						</script>
 					<script>
 						function initMap() {
+
+							//Coordinates of ODR's
 							let redDeer = {lat: 52.269585, lng: - 113.813091}
 							let rink_1 = {lat: 52.299287, lng:- 113.821799}
 							
 
 							let map = new google.maps.Map(document.getElementById("map"), {zoom: 15, center: rink_1});
 							let marker_1= new google.maps.Marker({position: redDeer, map: map});							
+							
+							//Markers for ODR
 							let rinkMarker1 = new google.maps.Marker({ 
 								position: rink_1, 
 								map: map, 
