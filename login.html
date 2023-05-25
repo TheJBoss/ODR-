@@ -1,20 +1,71 @@
 <html>
   <head>
     <title>Login</title>
-
-    <!--Links at the top of the page-->
-    <div class="links">
-      <a href="Samples/edittedSample1.html">A Better Sample</a> <a href="index.html">Home</a> <a href="marketplace.html">Marketplace</a> <a href="signup.html">Sign Up</a>
-      </div>
+    <link rel="stylesheet" href="css/stylesheet.css">
+  
   </head>
   <body>
+    <!--Menu-->
+    <div id="nav-body"
     
-<form action="login_action.php" method="post">
-    <div class="imgcontainer">
-      <img src="Images\resizedHockeySil.jpg" alt="Silhouette of a hockey player" width="250"/>
+    <div class="nav">
+      <ul>
+        <li class="list">
+          <a href="index.html">
+            <span class=icon>
+              <img width="30px" src="Images/HomeButton.svg">
+            </span>
+          <span class=text>Home</span>
+          </a>
+        </li>
+
+        <li class="list">
+          <a href="marketplace.html">
+          <span class=icon>
+            <img width="30px" src="Images\marketplace_icon.svg">
+          </span>
+          <span class=text>Marketplace</span>
+          </a>
+        </li>
+        <li class="list">
+          <a href="account.php">
+            <span class=icon>
+              <img width="30px" src="Images\hockey_player_icon.svg">
+            </span>
+          <span class=text>My Account</span>
+          </a>
+        </li>
+        
+        <li class="list">
+          <a href="signup.html">
+            <span class=icon>
+              <img width="30px" src="Images\register.svg">
+            </span>
+          <span class=text>Sign Up</span>
+          </a>
+        </li>
+        <li class="list">
+          <a href="Samples/edittedSample1.html">
+            <span class=icon>
+              <img width="30px" src="Images\page_icon.svg">
+            </span>
+          <span class=text>A Better Sample</span>
+          </a>
+        </li>
+        
+      </ul>
     </div>
+  </div>
+
+
+<form action="login_action.php" method="post">
+  <div class="logincontainer">
+    <div class="form"
+      <div class="imgcontainer">
+        <img src="Images\resizedHockeySil.jpg" alt="Silhouette of a hockey player" width="250"/>
+      </div>
   
-    <div class="logincontainer">
+    
       <h2>Sign In</h2>
       <label for="username">Username</label>
       <input type="text" placeholder="Enter Username" name="username" required><br>
@@ -27,6 +78,7 @@
       <label>
         <input type="checkbox" name="remember"> Remember me
       </label> 
+    </div>
 </form>
     <div class="signUp">
         <form action="signup.html">
