@@ -94,5 +94,5 @@ function showPosition(position) {
   "<br>Longitude: " + position.coords.longitude;
 }
 
-let directionsService = new google.maps.DirectionsService();
-let directionRenderer = new google.maps.DirectionsRenderer.setMap(map);
+// let directionsService = new google.maps.DirectionsService();
+// let directionRenderer = new google.maps.DirectionsRenderer.setMap(map);
