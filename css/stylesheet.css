@@ -25,10 +25,14 @@ header .nav{
 .homeDiv {
    
     height: 800px;
+    width: 100%;
     
 }
 
-
+#search {
+   margin-top: 10px;
+    margin-left: 25%;
+}
 #map {
     position: relative;
     width: 75%;
@@ -44,10 +48,7 @@ header .nav{
     padding-top: 100px;
     
 }
-.findLocation {
-    position: relative;
-    margin-top: auto;
-}
+
 /* .google_maps {
     position: absolute;
     display: flex;
@@ -277,7 +278,7 @@ li, a, button {
     color: black;
     cursor: pointer;      
 }
-#marketplace {
+.marketplace {
     min-height: auto;
     min-width: 100%;
     display: grid;

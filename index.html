@@ -9,6 +9,7 @@
 	<script async defer
 		src="https://maps.googleapis.com/maps/api/js?key=AIzaSyASjvIGTjQqr8EiatY03Or1P0ujenoKD-I&callback=initMap">
 		</script>
+		
 	
   </head>
 
@@ -70,13 +71,14 @@
 <!--Main display for home page-->		
 	<div class="homeDiv">
 			<h1>Welcome to ODR+</h1>
-											
+					
 					<div id="map"></div>
-			
-			
-
+			<div id="search">		
+			<input id="origin" type="text" placeholder="Origin"/>
+			<input id="numberResults" type="text" value="3" />
+			<input type="button" value="Search" onclick="codeAddress();"/>
+			<div id="info"></div></div>
 	
-		
 	</div>
 
 	<!--Footer links-->
@@ -166,10 +168,9 @@
     </div>
 </div>
 
-	
+<a target="_blank" href="https://icons8.com/icon/75363/ice-hockey">Ice Hockey</a> icon by <a target="_blank"
+		href="https://icons8.com">Icons8</a>
 <script src="js\map.js"></script>
 </body>
-
-<!-- <script src="map.js"></script> -->
 
 </html>
