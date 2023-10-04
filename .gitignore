@@ -1,12 +1,29 @@
- CNAME
+CNAME
 Unit1.zip
 maptest.html
-.gitignore
 testpage.html
-.gitignore
 .vscode/settings.json
 .vscode/launch.json
-.vscode/settings.json
-.vscode/settings.json
 js/testmap.js
-.vscode/settings.json
+css/kmlExample.css
+css/stylesheet.css
+css/test.css
+Images/desktop.ini
+Images/ODR+_files/common.js.download
+Images/ODR+_files/css
+Images/ODR+_files/js
+Images/ODR+_files/map.js.download
+Images/ODR+_files/stylesheet.css
+Images/ODR+_files/util.js.download
+Python/JupyterScraper.ipynb
+Python/pandasTest.py
+Python/ReverseGeoCode.py
+res/RDRinkDataArray.txt
+Python/webscraper.py
+res/Red Deer ODR.kml
+res/RedDeerCoord.kmz
+res/RedDeerCoords&Address.xlsx
+.gitignore
+res/RedDeerCoords&AddressForAtlist.csv
+res/rinks_data_spreadSheet.xlsx
+res/rinks_data.csv

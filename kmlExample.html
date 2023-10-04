@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+    <meta charset="utf-8">
+    <title>KML Click Capture Sample</title>
+    <link rel="stylesheet" href="css/kmlExample.css">
+  </head>
+  <body>
+    <div id="main">
+    <div id="map"></div>
+    <div id="capture"></div>
+    </div>
+    <form id="main-form">
+      <input type="text" id="origin" placeholder="Origin">
+      <input type="text" id="destination" placeholder="Destination"> 
+     </form>
+      <script>
+      var map;
+      var src = 'https://drive.usercontent.google.com/download?id=1g05r7xuIPQtS6KUuFzkbtZWVNwanCI1L&export=download&authuser=0&confirm=t&uuid=24a27af4-4eac-437e-8d98-f7d7f82adc41&at=APZUnTWBhNPhTjv9CA1IjuhyiD57:1695932856792';
+      
+      function initMap() {
+        map = new google.maps.Map(document.getElementById('map'), {
+            center: new google.maps.LatLng(52.26627673319338, -113.81296193309575),
+            zoom: 15,
+            mapTypeId: 'terrain',
+            mapId: "c2948530189cc91a"
+          });
+       
+        var kmlLayer = new google.maps.KmlLayer(src, {
+            suppressInfoWindows: true,
+            preserveViewport: false,
+            map: map
+          });
+        kmlLayer.addListener('click', function(event) {
+            var content = event.featureData.infoWindowHtml;
+            var testimonial = document.getElementById('capture');
+            testimonial.innerHTML = content;
+          });
+      }
+          </script>
+    <script async
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyASjvIGTjQqr8EiatY03Or1P0ujenoKD-I&callback=initMap">
+    </script>
+  </body>
+</html>
+
+
+
+<!-- <!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+    <meta charset="utf-8">
+    <title>KML Click Capture Sample</title>
+    <link rel="stylesheet" href="css/kmlExample.css">
+  </head>
+  <body>
+    <div id="map"></div>
+    <div id="capture"></div>
+    <br>
+    
+    <script>
+      var map;
+      var src = 'https://drive.usercontent.google.com/download?id=1g05r7xuIPQtS6KUuFzkbtZWVNwanCI1L&export=download&authuser=0&confirm=t&uuid=24a27af4-4eac-437e-8d98-f7d7f82adc41&at=APZUnTWBhNPhTjv9CA1IjuhyiD57:1695932856792';
+      var directions = new google.maps.DirectionService();
+      var directionsDisplay = new google.maps.DirectionsRenderer();
+      
+
+      function initMap() {
+        map = new google.maps.Map(document.getElementById('map'), 
+          {
+            center: new google.maps.LatLng(52.26627673319338, -113.81296193309575),
+            zoom: 15,
+            mapTypeId: 'terrain',
+            mapId: "c2948530189cc91a"
+          });
+       
+        var kmlLayer = new google.maps.KmlLayer(src, 
+          {
+            suppressInfoWindows: true,
+            preserveViewport: false,
+            map: map
+          });
+        kmlLayer.addListener('click', function(event) 
+          {
+            var content = event.featureData.infoWindowHtml;
+            var testimonial = document.getElementById('capture');
+            testimonial.innerHTML = content;
+          });
+      }
+      
+      function getRoute() 
+    {
+      var request = {
+        origin:
+        destination:
+        travelMode: google.maps.TravelMode.DRIVING,
+        unitSystem: google.maps.UnitSystems.METRIC
+      }
+    }
+      
+    </script>
+    <script async
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyASjvIGTjQqr8EiatY03Or1P0ujenoKD-I&callback=initMap">
+    </script>
+  </body>
+</html> -->

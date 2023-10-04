@@ -1,59 +1,100 @@
 <!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Navbar Test</title>
-        <meta name="description" content="Find an ODR near you">
-        <meta name="keywords" content="Outdoor Rink, Outdoor, Rink, Hockey, Ice Skating, Skating">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="css/mainstyles.css">
-    </head>
-    <body>
-      <header>
-        <nav>
-            <ul>
+<html>
+  <head>
+	<title>ODR+</title>
+	
+	<link rel="stylesheet" href="css\stylesheet.css">
+
+  </head>
+
+  <body>
+
+	<header>
+		
+<!--Navbar at the top of the page-->
+	 <nav>
             <li class="logo"><a href="index.html">
                 <span class=icon>
-                    <img width="100" src="Images\logo.jpg" alt="ODR Plus Logo">
+                    <img width="100px" src="\Images\logo.jpg">
                 </span>
             </a>
             </li>
-            </ul>
-            <ul class="menu">     
+            <ul class="menu">
+                
                 <li class="item">
                     <a href="marketplace.html">
-                        <span class="icon"><img src="Images/marketplace_icon.svg"  alt="menu image" width=30></span>
+                        <span class="icon"><img src="\Images\marketplace_icon.svg" width=30px></span>
                         <span class="text">Marketplace</span> 
                     </a>
                 </li>
                 <li class="item">
                     <a href="account.php">
-                        <span class="icon"><img src="Images/hockey_player_icon.svg" alt="menu image" width=30></span>
+                        <span class="icon"><img src="\Images\hockey_player_icon.svg" width=30px></span>
                         <span class="text">My Account</span>
                     </a>
                 </li>
                 <li class="item button">
                     <a href="#popup2">
-                        <span class="icon"><img src="Images/hockey_puck_icon.svg" alt="menu image" width=30></span>
+                        <span class="icon"><img src="\Images\hockey_puck_icon.svg" width=30px></span>
                         <span class="text">Sign In</span>
                     </a>
                 </li>
                 <li class="item button secondary">
                     <a href="#popup1">
-                        <span class="icon"><img src="Images/register.svg" alt="menu image" width=30></span>
+                        <span class="icon"><img src="\Images\register.svg" width=30px></span>
                         <span class="text">Sign Up</span>
                     </a>
                 </li>
                 <li class="toggle"><span class="bars"></span></li>
             </ul>
         </nav>
-      </header>
-    <script src="js/map.js"></script>    
-    <div id="map"></div>
-    <iframe src="https://my.atlist.com/map/18edddff-d2b2-4503-82a8-55a965b30581?share=true" allow="geolocation 'self' https://my.atlist.com" width="100%" height="600px" frameborder="0" scrolling="no" allowfullscreen></iframe>
-    
-      <!--Sign up Modal-->
+	</header>
+<script src="js\map.js"></script>
+<!--Main display for home page-->		
+	<div class="home_Grid_Container">
+			<h1 id="home_Grid_Item1">Welcome to ODR+</h1>
+					
+			<div id="map"></div>
+
+			<div id="home_Grid_Item3 search_Grid_Container">
+                <form id="">		
+                    <div id="search_Grid_Item1"><input id="origin" type="text" placeholder="Origin"/></div>
+                    <div id="search_Grid_Item2"><input id="numberResults" type="text" value="3" /></div>
+                    <div id="search_Grid_Item3"><input id="searchButton" type="button" value="Search"/></div>
+                </form>
+            </div>
+            <div id="info"></div>
+	
+	</div>
+
+	<!--Footer links-->
+<footer>
+	<hr class="footerHR">
+		<ul class="footerLinks">
+			<li>
+				<a href="TaC.html">
+					<span class="text">Terms and Conditions</span>
+				</a>
+			</li>
+			<li>
+				<h3>Newsletter</h3>
+				<form>
+					<input type="email" class="newsletter" placeholder="Join our newsletter" required><br>
+					<button type="submit">Join</button>
+				</form>
+			</li>
+				<li>
+					<a href="feedback.html">
+						<span class="text">Feedback</span>
+					</a>
+				</li>
+		</ul>
+	
+        <!--<a target="_blank" href="https://icons8.com/icon/75363/ice-hockey">Ice Hockey</a> icon by <a target="_blank"
+		href="https://icons8.com">Icons8</a>-->
+</footer>
+
+<!--Sign up Modal-->
     <div class="overlay" id="popup1">
         <div class="popup">
             <a class="close" href="#">&times;</a>
@@ -62,7 +103,7 @@
                 
                 <form action="signup_action.php" method="post">
                     <div class="imgcontainer">
-                        <img src="Images/resizedHockeySil.jpg" alt="Silhouette of a hockey player" width="150">
+                        <img src="Images\resizedHockeySil.jpg" alt="Silhouette of a hockey player" width="150" />
                     </div>
 
                     <h1>Sign up</h1>
@@ -92,7 +133,7 @@
                 
                 <form action="login_action.php" method="post">
                     <div class="imgcontainer">
-                        <img src="Images/resizedHockeySil.jpg" alt="Silhouette of a hockey player" width="150">
+                        <img src="Images\resizedHockeySil.jpg" alt="Silhouette of a hockey player" width="150" />
                     </div>
 
                     <h1>Sign In</h1>
@@ -105,24 +146,20 @@
 					
                     <button type="submit" class="modal_button" name="signIn">Sign In</button>
 					<br>
-                
-                </form>
 					<div class="forgot">
-                        <form style="display: inline" action="forgotPassword.html" method="get">
-                            <button class="modal_button">Forgot Password</button>
-                        </form>
-                    </div>
-						
-					
+						<a href="forgotPassword.html"><button class="modal_button">Forgot Password</button></a>
+					</div>
+				</form>
+				
             </div>
         </div>
     </div>
-    
+</div>
 
-    <script async defer
-    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyASjvIGTjQqr8EiatY03Or1P0ujenoKD-I&callback=initMap">
-    </script>
-   
-    </body>
+
+		<script async defer
+			src="https://maps.googleapis.com/maps/api/js?key=AIzaSyASjvIGTjQqr8EiatY03Or1P0ujenoKD-I&callback=initMap">
+			</script>
+</body>
+
 </html>
-

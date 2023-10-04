@@ -1,3 +1,9 @@
 {
-    "livePreview.defaultPreviewPath": "/index.html"
+    "livePreview.defaultPreviewPath": "/index.html",
+    "[java]": {
+        "editor.insertSpaces": true
+    },
+    "appService.defaultWebAppToDeploy": "/subscriptions/1be395bf-1903-43f9-93cc-a34d12ad534b/resourceGroups/ODR/providers/Microsoft.Web/sites/ODRPlus",
+    "appService.deploySubpath": ".",
+    "java.format.settings.url": ".vscode/java-formatter.xml"
 }
